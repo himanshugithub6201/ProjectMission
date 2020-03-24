@@ -1,0 +1,50 @@
+//Utility class
+
+.container {
+  max-width: $screen-width;
+  margin: auto;
+  text-align: center;
+}
+
+.m-heading {
+  font-size: 1.5rem;
+}
+.l-heading {
+  font-size: 3rem;
+}
+
+.light-heading {
+  color: #f4f4f4;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    border-radius: 30px;
+    color: #f4f4f4;
+    background-color: $primary-color;
+  }
+  &-light {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $primary-color;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $primary-color;
+  }
+}
+
+.clear-header {
+  height: 85vh;
+  width: 100%;
+}
