@@ -5,9 +5,11 @@
   margin: auto;
   text-align: center;
 }
-
+.s-heading {
+  font-size: 1rem;
+}
 .m-heading {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .l-heading {
   font-size: 3rem;
@@ -15,6 +17,33 @@
 
 .light-heading {
   color: #f4f4f4;
+}
+.m-1 {
+  margin: 1rem;
+}
+.m-2 {
+  margin: 1rem;
+}
+.m-3 {
+  margin: 1rem;
+}
+.m-4 {
+  margin: 1rem;
+}
+
+.p-1 {
+  text-align: left;
+  padding: 0.3rem;
+}
+.p-2 {
+  text-align: left;
+  padding: 1rem;
+}
+.p-3 {
+  padding: 1.5rem;
+}
+.p-4 {
+  padding: 2rem;
 }
 
 %btn-shared {
@@ -42,9 +71,43 @@
     color: #f4f4f4;
     background-color: $primary-color;
   }
+  &-small {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $primary-color;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
 }
 
 .clear-header {
   height: 85vh;
   width: 100%;
+}
+
+.clear {
+  float: none;
+}
+
+.small-line {
+  display: block;
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  width: 5rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.f-h {
+  margin-bottom: 1rem;
+}
+
+.soci {
+  color: $primary-color;
+}
+
+.form-group {
+  margin-top: 1rem;
 }

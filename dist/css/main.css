@@ -8,8 +8,11 @@
   margin: auto;
   text-align: center; }
 
+.s-heading {
+  font-size: 1rem; }
+
 .m-heading {
-  font-size: 1.5rem; }
+  font-size: 2rem; }
 
 .l-heading {
   font-size: 3rem; }
@@ -17,7 +20,33 @@
 .light-heading {
   color: #f4f4f4; }
 
-.btn-main, .btn-light, .btn-dark {
+.m-1 {
+  margin: 1rem; }
+
+.m-2 {
+  margin: 1rem; }
+
+.m-3 {
+  margin: 1rem; }
+
+.m-4 {
+  margin: 1rem; }
+
+.p-1 {
+  text-align: left;
+  padding: 0.3rem; }
+
+.p-2 {
+  text-align: left;
+  padding: 1rem; }
+
+.p-3 {
+  padding: 1.5rem; }
+
+.p-4 {
+  padding: 2rem; }
+
+.btn-main, .btn-light, .btn-dark, .btn-small {
   display: inline-block;
   padding: 0.8rem 2rem;
   transition: all 0.5s;
@@ -37,14 +66,42 @@
   color: #f4f4f4;
   background-color: rgba(234, 114, 140, 0.9); }
 
+.btn-small {
+  color: #f4f4f4;
+  background-color: rgba(234, 114, 140, 0.9);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px; }
+
 .clear-header {
   height: 85vh;
   width: 100%; }
 
+.clear {
+  float: none; }
+
+.small-line {
+  display: block;
+  background: rgba(234, 114, 140, 0.9);
+  border: 1px solid rgba(234, 114, 140, 0.9);
+  border-radius: 10px;
+  width: 5rem;
+  margin: auto;
+  margin-bottom: 1rem; }
+
+.f-h {
+  margin-bottom: 1rem; }
+
+.soci {
+  color: rgba(234, 114, 140, 0.9); }
+
+.form-group {
+  margin-top: 1rem; }
+
 body {
   font-family: "Dosis";
   line-height: 1.4rem;
-  background: #c0bebe; }
+  background: #f4f4f4; }
 
 #navbar {
   position: relative;
@@ -56,6 +113,18 @@ body {
     padding: 3rem; }
     #navbar-content h1 .dot {
       color: rgba(234, 114, 140, 0.9); }
+    #navbar-content ul {
+      list-style: none;
+      display: flex; }
+    #navbar-content ul > li {
+      margin: 0 1.5rem;
+      font-size: 1.5rem; }
+    #navbar-content ul > li > a {
+      text-decoration: none;
+      color: white; }
+      #navbar-content ul > li > a:hover {
+        color: rgba(234, 114, 140, 0.9);
+        border-bottom: 2px solid rgba(234, 114, 140, 0.9); }
 
 #main-header {
   position: absolute;
@@ -116,3 +185,74 @@ body {
     #section-b-content-services .section-b-content-services-3 .section-b-content-services-title,
     #section-b-content-services .section-b-content-services-4 .section-b-content-services-title {
       margin-bottom: 0.8rem; }
+
+#section-c {
+  display: flex;
+  justify-content: center;
+  justify-items: center; }
+  #section-c-image {
+    width: 100%;
+    height: 50vh;
+    background: url(https://source.unsplash.com/weekly?model) no-repeat center center/cover; }
+  #section-c-content {
+    background: rgba(234, 114, 140, 0.9);
+    padding: 4rem; }
+    #section-c-content-rating {
+      display: flex; }
+    #section-c-content .content-p {
+      margin-bottom: 1.76rem; }
+
+#section-d-heading {
+  margin: 4rem auto 2rem auto; }
+
+#section-d-content-ul {
+  list-style: none;
+  display: flex;
+  margin: 2rem auto 2rem auto; }
+  #section-d-content-ul-1 {
+    padding: 0.25rem;
+    margin: 0.5rem; }
+  #section-d-content-ul-2 {
+    padding: 0.25rem;
+    margin: 0.5rem; }
+  #section-d-content-ul-3 {
+    padding: 0.25rem;
+    margin: 0.5rem; }
+  #section-d-content-ul-4 {
+    padding: 0.25rem;
+    margin: 0.5rem; }
+
+#section-d-image {
+  width: 100%;
+  height: 100%;
+  background: url(https://source.unsplash.com/weekly?model) no-repeat center top/cover; }
+
+#section-e {
+  display: flex;
+  background: rgba(234, 114, 140, 0.9);
+  margin: 2rem 0 5rem 0; }
+  #section-e-content-d {
+    padding: 1rem;
+    margin: 1rem; }
+    #section-e-content-d-head {
+      margin: 2rem 0 1rem 0;
+      padding: 1rem;
+      font-size: 2rem; }
+    #section-e-content-d-button {
+      margin: 7rem auto 0 auto; }
+      #section-e-content-d-button .al {
+        border: 2px solid white;
+        width: 10rem; }
+    #section-e-content-d .para-e {
+      padding: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0 0 3rem 0; }
+
+#main-footer .main-footer-category {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-evenly; }
+
+#main-footer ul {
+  list-style: none; }
